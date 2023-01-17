@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - NPM like copy to clipboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
+  <script src="topbar.js"></script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <!-- simple copy-to-clipboard with few lines of code -->
+
+  <h1 id="settext" data-ctc>npm i vanilla-js</h1>
+  <!-- partial -->
+  <script src="script.js"></script>
+<script>
+
+
+var query = getQueryParams(document.location.search);
+console.log(query)
+  document.getElementById("settext").innerHTML = query.textcopy;
+
+</script>
+</body>
+
+</html>
