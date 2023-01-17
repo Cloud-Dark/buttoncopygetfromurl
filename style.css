@@ -1,0 +1,35 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: #d0d0d0;
+  display: grid;
+  height: 90vh;
+  font-family: "Consolas", monospace;
+}
+
+h1{
+  background: #f3f3f3;
+  place-self: center;
+  border: 1px #e8e8e8 solid;
+  border-left: 6px #949494 solid;
+  border-radius : 8px;
+  padding:15px 20px;
+  color: #111;
+}
+
+h1:before{
+  content:'>';
+  margin-right: 20px;
+}
+
+
+body.special:before{
+  content:'Text Berhasil di copy';
+  position: absolute;
+  left:0;
+  right: 0;
+  background: #70b8ff;
+  font-weight: bold;
+  color: #005f87;
+  padding: 1%;
+}
